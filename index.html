@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="Encriptador-Style.css">
+    <script src="encriptador.js"></script>
+</head>
+
+<body>
+    <main>
+        <div class="caja">
+            <div class="logo">
+                <img src="img/logo.png" alt="logo">
+
+            </div>
+
+            <textarea class="entrada-texto" id="entrada-texto" type="text" onclick="elementos()" 
+                placeholder="Ingrese el texto aqui"></textarea>
+
+
+            <div class="caja-salida">
+
+                <textarea class="salida-texto" name="salida-texto" id="salida-texto" cols="30" rows="10" readonly></textarea>
+
+
+                <img class="dibujo" id="dibujo" src="img/Muñeco.png" alt="dibujo">
+
+
+                <p class="primerMensaje" id="primerMensaje">Ningun mensaje fue encontrado</p>
+                <p class="segundoMensaje" id="segundoMensaje">Ingresa el texto que deseas encriptar o desencriptar</p>
+                <textarea class="salida-texto" name="salida-texto" id="salida-texto" cols="30" rows="10"></textarea>
+
+                <input class="btn-copiar" id="btn-copiar" type="button" value="Copiar" onclick="copiar()">
+
+            </div>
+            <div class="condicional">
+
+                <p><img src="img/signo-exclamacion.png" alt="vector"> Solo letras minusculas y sin acentos</p>
+            </div>
+            <div class="botones">
+                <input class="btn-encriptar" type="button" value="Encriptar" onclick="encriptar()">
+                <input class="btn-desencriptar" type="button" value="Desencriptar" onclick="desencriptar()">
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
